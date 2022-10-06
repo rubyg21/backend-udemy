@@ -3,7 +3,7 @@ const fs = require("fs");
 console.clear();
 
 console.log("====================");
-console.log("Tabla del: 5");
+console.log("Tabla del: 3");
 console.log("====================");
 
 const base = 3;
