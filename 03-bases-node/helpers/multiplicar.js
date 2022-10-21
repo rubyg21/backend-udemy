@@ -1,6 +1,6 @@
 
 const fs = require("fs");
-
+const colors = require('colors');
 const crearArchivo = async(base = 5, listar= false) => {
 
 try {
@@ -12,15 +12,15 @@ try {
 
     if ( listar ) {
         console.log("====================");
-        console.log('Tabla del' , base );
+        console.log('Tabla del'.red , base );
         console.log("====================");
         
-        console.log(salida);
+        console.log(salida.brightRed);
     }
   
-    fs.writeFileSync(`tabla-${base}.txt`, salida);
+    fs.writeFileSync(`tabla-${base}.txt`, salida.yellow);
   
-    return `tabla-${base}.txt`;
+    return `tabla-${base}.txt`.cyan;
 } catch (error) {
     throw error;
 }
